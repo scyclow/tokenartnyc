@@ -1,0 +1,117 @@
+PROJECT PLAN
+
+Space
+  - This is the biggest piece of the puzzle, and will ultimately determine the capacity of the conference, and a large part of the finances and the structure.
+  - We're aiming for a capacity of ~500 people +/- 100
+  - Layout: Programming will be single track, so we need at least one room large enough to seat everyone. Additionally, we'd like ample space for expos, art installation, and schmoozing
+  - Depending on the layout of the space, we think 7500 - 10000 sqft makes sense
+  - Ideally Union square, Washington Square Park, Chealsea, SoHo area -- accessible in manhattan and near either greenary or water. Also open to accessible areas of brooklyn (specifically williamsburg and dumbo)
+  - as long as the space has sufficient ammenities, we're flexible on the ambiance. We'd prefer something on the emptier side that we can mold (large sound studios, empty office/retail space) or something designed specifically for a conference environment. But we're also open to music venues and non traditional venues
+  - rent the space for about a week, which would cover the main three days of the conference, setup + teardown time, + buffer. maybe that monday can be a checkin day + allow attendees to use the space for schmoozing
+
+
+Main Programming
+  - Focusing on the blockchain-based "fine art" scene
+    - topics including generative art, photography, conceptual art, ai art, where NFTs fit into the broader art world and narrative, community building/technical/legal/etc talks related to artists and blockchain art making, collecting, etc.
+  - single speaker track
+  - mix of longer/medium/lightning talks, panels, unconferencing
+  - stretch goal: incorporate a heavy online viewing component -- record/stream all of the talks, facilitate discord discussion
+    - We'd like to find someone who knows what they're doing to really own this whole process
+  - Example schedule
+    - 10-11: opening keynote
+    - 11-11:30: generative art talk
+    - 11:30-12:30: generative art panel
+    - 12:30-1:30: lunch
+    - 1:30 - 2:30: lightning talks
+    - 2:30-3: ai + gen art talk
+    - 3-4: ai panel
+    - 4-5:30: unconferencing
+    - 5:30 - 6:30: beer-o-clock
+  - dream speaker list
+  - other ideas: music, some outdoor activities, block off some time where anyone can get up and talk for 2 minutes
+
+Expo/schmoozing area, sponsorship opportunities
+  - a lot of the specifics will depend on what the space allows
+  - schmoozing space is very important, so we'll provide ample room for chatting/lounging/relaxing
+  - sponsors can set up shop and give away free (aesthetically pleasing) stuff
+  - We want to be fairly selective with this, as it's part of the overall experience. so, this won't be blatent shilling. We're thinking that "booths"/areas will be more along the lines of art installations, live minting experiences, lounges
+  - sponsorship on snacks/drinks
+  - sponsorship on lunch
+  - sponsorship on beer-o-clock
+  - sponsors name goes on badge, banner, website
+  - potential sponsor list
+
+Audio/Visual & showrunning
+  - if the venue doesn't provide it, we'll need to find someone experienced to own a lot of the logisitcal pieces:
+    - event stage
+    - projector
+    - mics/audio
+    - audience seating
+    - streaming?
+
+Admissions
+  - attendees check in on day 1 and receive a badge, which lets them into the rest of the conference
+  - on check in, attendees must take rapid covid test
+  - whoever is on admission duties will need to be trained on whatever ticketing system we go with
+  - Security/bouncers: Needs more research. maybe we can use the guys that BM use
+
+Volunteers
+  - We should probably put out a volunteer form, and pick out a handful of people we know and trust to give free tickets to and help out with a lot of the manual labor
+
+Ticketing
+  - Tickets represented as NFTs
+  - Put awesome generative art on tickets, which would give people an amazing, unique ticket stub
+  - release tickets in three waves:
+    - priority: we'd hand select addresses of people we actively want to attend the conference, and whitelist their addresses for early (maybe discounted) ticket purchases.
+    - normal: we'd then make the majority of remaining tickets available to those who hold preselected NFT collections.
+    - wild card: a portion of tickets would be sold to the general public. This could a) potentially bring in more revenue from selling tickets at whatever "marketprice is", and b) add a little bit of a wild card vibe to the attendee list
+    - hold back some tickets for buffer/giveaways/etc
+
+  - To reduce ticket scalping, normal and priority tickets could be refundable, but non transferrable until after the conference (or with approval). Maybe we allow the token holder to remove all pre-conference transfer restrictions by paying a fee. wild card tickets might not have any restrictions
+  - We'd look to partner with someone (maybe FWB) to handle the ticketing/admissions infrasturcture.
+  - I think the basic workflow would be that you get an NFT, and then you use the NFT to register online (provide name/contact info/etc), and this would email them a qr code -- when the qr code is scanned, it makes sure that the token is in the same wallet.
+    - we'd obviously have to overcommunicate the fact that you need to use the NFT to register before you show up
+
+  - ticket holders could vote on speaker, get private discord channel acess
+  - if we end up with a non trivial surplus, we can either refund ticket holders some amount and/or donate to charity
+
+
+Finances/Legal
+  - Look to raise around $500k
+    - sell tickets for ~$750 each (nft.nyc is $600, and hopefully the NFTness of the tickets would at least add another $150) for a rough total of $375k
+    - maybe use the publicity machine we're creating to promote special 1/1 NFTs that we auction off
+    - raise the rest of the money through sponsorship
+  - incorporate as Token Art LLC in delaware
+  - set up multisig wallet for ticketing
+
+
+Web presence
+  - website that
+    - is aestheticall pleasing (ex s4a day)
+    - allows users to purchase tickets/take ticket actions
+    - PROMINENTLY DISPLAYS SPEAKERS + SCHEDULE
+    - clearly denotes time/location + google map
+
+  - would be nice to have someone own social media (twitter, discord moderation)
+  - discord channels for:
+    - general public/faqs/travel logistics
+    - ? viewing streams ?
+    - attendee lounge
+    - speakers
+    - organizers
+    - volunteers
+    - nft nyc week events
+
+
+Branding
+  - might need to allocate design resources to some of the overall branding
+
+Code of conduct
+  - bang bang con
+
+Merch
+  - face masks
+  - t shirts
+  - temporary tattoos
+  - hats
+  - prints

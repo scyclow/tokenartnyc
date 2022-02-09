@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Token Art NYC</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'PT Mono', monospace;
+    }
+    h1 {
+      padding: 0.5em;
+      font-size: 100px;
+      text-align: center;
+      padding-bottom: 0.25em;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      padding: 0.5em;
+      font-size: 40px;
+
+    }
+
+    .color-splash {
+      text-shadow:
+        0.055em 0.05em 0 #00ffff,
+        -0.055em 0.05em 0 #ffff00,
+        0.055em -0.05em 0 #ff00ff,
+        -0.055em -0.05em 0 #00ff66
+        /*15px 15px 0 #ff0000,
+        -15px 15px 0 #0000ff, */
+
+    }
+
+    .speaker-list {
+      padding: 1em;
+    }
+
+    .speaker {
+      /*display: inline-block;*/
+      padding-left: 0;
+      padding-right: 0.5em;
+      padding-top:  0.2em;
+      padding-bottom:  0.2em;
+      font-size: 50px;
+    }
+
+    .marquee {
+      overflow: hidden;
+      border-top: 4px dashed;
+      border-bottom: 4px dashed;
+    }
+    .marquee span {
+      margin: 0 1em;
+    }
+
+    .logo {
+      font-size: 400px;
+      text-align: center;
+
+      text-shadow:
+        15px 14px 0 #00ffff,
+        -15px 14px 0 #ffff00,
+        15px -14px 0 #ff00ff,
+        -15px -14px 0 #00ff66
+    }
+
+    .sectionHeader {
+      text-align: center;
+      font-size: 60px;
+    }
+
+
+    .marquee {
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .marqueeInner {
+      animation: marquee 15s linear infinite;
+      display: inline-flex;
+      transform: translate3d(-50%, 0, 0);
+    }
+    .marqueeInner > * {
+      display: inline-block;
+      width: 7em;
+    }
+
+    @keyframes marquee {
+      0% {
+          transform: translate3d(-10%, 0, 0);
+      }
+
+      100% {
+          transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    p {
+      line-height: 1.2;
+      font-size: 24px;
+      padding: 1em;
+      margin: auto;
+      max-width: 800px;
+    }
+
+    .scheduleDay {
+      width: 25%;
+      border: 1px solid;
+      /*height: 500px;*/
+      padding: 0.5em;
+    }
+    dl > * {
+      margin-top: 0.8em;
+    }
+    dt {
+      text-decoration: underline;
+      margin-bottom: 0.2em;
+    }
+
+    h3 {
+      margin: auto;
+      max-width: 800px;
+      text-decoration: underline;
+      margin-top: 1em;
+    }
+
+    ul {
+      margin: auto;
+      max-width: 800px;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+<div class="logo">T</div>
+<h1 class="color-splash">Token Art NYC</h1>
+<div class="marquee">
+  <div class="marqueeInner">
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+    <h2>6/21 & 6/22</h2>
+  </div>
+</div>
+
+<div>
+  <section>
+    <h2 class="color-splash sectionHeader">WHY?</h2>
+
+    <div style="display: flex; justify-content: center;">
+      <img src="./data1.png" style="border: 4px solid; width: 100%; max-width: 700px; margin: auto;">
+    </div>
+
+  </section>
+
+
+
+  <section>
+    <h2 class="color-splash sectionHeader">Spring Studios</h2>
+    <div style="display: flex; justify-content: center;">
+      <img src="./NY_Studio_4_1.jpeg" style="border: 4px solid; width: 100%; max-width: 700px; margin: auto;">
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <img src="./SS-map.png" style="border: 4px solid; width: 100%; max-width: 400px; margin: 1em auto;">
+    </div>
+    <p>Roof top, ammeneties, other details about location</p>
+    <p>500 attendees (+/- 100)</p>
+  </section>
+
+  <section>
+    <h2 class="color-splash sectionHeader">EXAMPLE SCHEDULE</h2>
+    <div style="display: flex;">
+      <div class="scheduleDay">
+        <h3>6/20</h3>
+        <dl>
+          <div>
+            <dt>12-6</dt>
+            <dd>Check in at Bright Moments</dd>
+          </div>
+
+          <div>
+            <dt>6-9</dt>
+            <dd>Speaker dinner?</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="scheduleDay">
+        <h3>6/21</h3>
+        <dl>
+          <div>
+            <dt>9:30-10</dt>
+            <dd>breakfast, schmoozing, opening remarks</dd>
+          </div>
+          <div>
+            <dt>10-11</dt>
+            <dd>opening keynote</dd>
+          </div>
+          <div>
+            <dt>11-11:30</dt>
+            <dd>generative art talk</dd>
+          </div>
+          <div>
+            <dt>11:30-12:30</dt>
+            <dd>generative art panel</dd>
+          </div>
+          <div>
+            <dt>12:30-2</dt>
+            <dd>lunch</dd>
+          </div>
+          <div>
+            <dt>2-2:30</dt>
+            <dd>gen art talk</dd>
+          </div>
+          <div>
+            <dt>2:30-3</dt>
+            <dd>ai + gen art talk</dd>
+          </div>
+          <div>
+            <dt>3-4</dt><dd>ai panel</dd>
+          </div>
+          <div>
+            <dt>4-5:30</dt><dd>unconferencing</dd>
+          </div>
+          <div>
+            <dt>5:30 - 6:30</dt><dd>beer-o-clock</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="scheduleDay">
+        <h3>6/22</h3>
+        <dl>
+          <div>
+            <dt>9:30-10</dt>
+            <dd>breakfast, schmoozing</dd>
+          </div>
+          <div>
+            <dt>10-11</dt>
+            <dd>photography panel</dd>
+          </div>
+          <div>
+            <dt>11-11:30</dt>
+            <dd>photography talk</dd>
+          </div>
+          <div>
+            <dt>11:30-12:30</dt>
+            <dd>conceptual art panel</dd>
+          </div>
+          <div>
+            <dt>12:30-2</dt>
+            <dd>lunch</dd>
+          </div>
+          <div>
+            <dt>2-3</dt>
+            <dd>collectors panel</dd>
+          </div>
+          <div>
+            <dt>3-4</dt>
+            <dd>art history/trad art world panel</dd>
+          </div>
+          <div>
+            <dt>4-5:30</dt><dd>unconferencing</dd>
+          </div>
+          <div>
+            <dt>5:30 - 6:30</dt><dd>beer-o-clock</dd>
+          </div>
+        </dl>
+      </div>
+<!--       <div class="scheduleDay">
+        <h3>6/22</h3>
+        <dl>
+          <div>
+            <dt>9-10</dt>
+            <dd>breakfast, schmoozing</dd>
+          </div>
+          <div>
+            <dt>10-11:30</dt>
+            <dd>~6 lightning talks (10-15min each)</dd>
+          </div>
+          <div>
+            <dt>11:30-12:20</dt>
+            <dd>technology panel</dd>
+          </div>
+          <div>
+            <dt>12:30-2</dt>
+            <dd>lunch</dd>
+          </div>
+          <div>
+            <dt>2-3:330</dt>
+            <dd>~6 lightning talks (10-15min each)</dd>
+          </div>
+          <div>
+            <dt>3:30-4:30</dt>
+            <dd>closing keynote</dd>
+          </div>
+          <div>
+            <dt>4:30-5</dt>
+            <dd>closing remarks</dd>
+          </div>
+          <div>
+            <dt>5 - 6:30</dt><dd>beer-o-clock</dd>
+          </div>
+        </dl>
+      </div> -->
+    </div>
+
+    <div class="speaker-list">
+      <h2 class="color-splash sectionHeader">SPEAKER WISH LIST</h2>
+
+      <h2 class="speaker">Tyler Hobbs, Rhea Myers, DEAFBEEF, Snowfro, Justin Aversano, Dmitri Cherniak, Rafaël Rozendaal, Larva Labs, Mitchel Chan, Alejandro Cartagena, Helena Sarin, DanDan, Tina Rivers Tyan, Brian Frye, Van den Dorpel, Matt Deslauries, Joan Heemskerk, + more</h3>
+    </div>
+  </section>
+
+  <section>
+      <h2 class="color-splash sectionHeader">BREAKOUT AREA</h2>
+      <h2 class="color-splash sectionHeader">TOKEN ART ONLINE</h2>
+      <p>We'd like the maximize the reach of the conference by streaming + recording all of the talks. We'd also like to provide discord spaces for people to discuss the talks in real time. Would also be nice to record a bit of the conference away from the stage</p>
+
+  </section>
+
+  <section>
+    <h2 class="color-splash sectionHeader">TICKETING</h2>
+    <p>Ticketing + Admission will be primarily managed by NFTs. Each token will have a piece of generative art associated with it. </p>
+    <ul>
+      <li>Private sale: organizers will hand select an initial group of attendees to make up the base of the attendee list. This will consists primarily of artists, important community members</li>
+      <li>First round: maybe dutch auction? we can curb scalping at this tier by restricting token approvals (so, tokens can be transferred, but can't be listed on exchanges)</li>
+      <li>Price gauging/wild card round (smaller): dutch auction where anyone can buy them + sell without restrictions</li>
+      <li>Additionally, a batch of tickets will be reserved for staff, speakers, volunteers, sponsors, raffles, </li>
+    </ul>
+    <p></p>
+
+  </section>
+
+  <section>
+    <h2 class="color-splash sectionHeader">$$$$$$$$</h2>
+    <ul>
+      <li>We estimate that the total costs will be in the neighbordhood of $250k</li>
+      <li>Selling ~500 tickets at $400 each = $200k (Same as nft.nyc on a daily basis + you get an nft)</li>
+      <li>Raise $100k in sponsors</li>
+      <li>If any meaningful $ left over, token holders vote on charity</li>
+    </ul>
+
+  </section>
+  <section>
+    <h2 class="color-splash sectionHeader">SPONSORSHIP TIERS</h2>
+    <h3>Tier 0 - $50k+ (20 ETH)</h3>
+    <ul>
+      <li>10 reserved Tickets</li>
+      <li>Space in breakout area with first dibs on location</li>
+      <li>Discord perks: special roles?</li>
+      <li>Steve will wear a hat or t shirt of your choosing for one day</li>
+      <li>Tier 0 NFT</li>
+      <li>Access to the Free Stuff table</li>
+      <li>Verbal thanks during conference</li>
+      <li>Most prominent logo on welcome slide</li>
+      <li>Most prominent logo on website</li>
+    </ul>
+    <h3>Tier 1 - $25k (10 ETH)</h3>
+    <ul>
+      <li>5 Reserved Tickets</li>
+      <li>Space in breakout area with second dibs on location</li>
+      <li>Tier 1 NFT</li>
+      <li>Access to the Free Stuff table</li>
+      <li>Verbal thanks during conference</li>
+      <li>Very prominent logo on welcome slide</li>
+      <li>Very prominent logo on website</li>
+    </ul>
+
+    <h3>Tier 2 - $10k (5 ETH)</h3>
+    <ul>
+      <li>2 Reserved Tickets</li>
+      <li>Space in breakout area with third dibs on location</li>
+      <li>Tier 2 NFT</li>
+      <li>Access to the Free Stuff table</li>
+      <li>Verbal thanks during conference</li>
+      <li>Prominent logo on welcome slide</li>
+      <li>Prominent logo on website</li>
+    </ul>
+
+    <h3>Tier 3 - $5k (2 ETH)</h3>
+    <ul>
+      <li>1 Reserved Ticket</li>
+      <li>Space in breakout area (if available)</li>
+      <li>Tier 3 NFT</li>
+      <li>Access to the Free Stuff table</li>
+      <li>Verbal thanks during conference</li>
+      <li>Logo on welcome slide</li>
+      <li>Logo on website</li>
+    </ul>
+
+    <h3>Tier 4 - $2k (1 ETH)</h3>
+    <ul>
+      <li>Tier 4 NFT</li>
+      <li>Logo on welcome slide</li>
+      <li>Logo on website</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="color-splash sectionHeader">SPONSORSHIP ELEMENTS</h2>
+    <h3>Live Streaming</h3>
+    <h3>Coffee/Breakfast</h3>
+    <h3>Lunch</h3>
+    <h3>Snacks</h3>
+    <h3>Happy Hour</h3>
+    <h3>Artist Installation</h3>
+  </section>
+</div>
+
+
+
+
+
+</body>
+</html>
