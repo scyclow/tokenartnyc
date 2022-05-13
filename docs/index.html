@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Token Art NYC</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      color: #231f20;
+      font-family: 'PT Mono', monospace;
+    }
+    .hero {
+      width: calc(100vw - 3em);
+      max-width: 1170px;
+      margin: auto;
+      margin-bottom: 58px;
+      padding: 0 1.5em;
+    }
+    .hero-logo {
+      width: 100%;
+    }
+
+    .marquee-logo {
+      width: 150px;
+    }
+
+    @media (max-width: 500px) {
+      .marquee-logo {
+        width: 100px;
+      }
+
+      .hero {
+        margin-bottom: 34px;
+      }
+    }
+
+    .marquee {
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      /*border: 3px solid;*/
+    }
+
+    .marqueeInner {
+      animation: marquee 20s linear infinite;
+      display: inline-flex;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    .marqueeInnerReverse {
+      animation: marqueeReverse 20s linear infinite;
+      display: inline-flex;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+
+    .marqueeInner > * {
+      display: inline-block;
+      margin-right: 1em;
+      /*width: 7em;*/
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translate3d(-10%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    @keyframes marqueeReverse {
+      0% {
+        transform: translate3d(0%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-10%, 0, 0);
+      }
+    }
+
+    .date {
+      font-weight: 100;
+      margin-right: 2em;
+      font-size: 20px;
+      padding: 0.5em 0;
+      text-shadow: -16px -12px #00f;
+
+
+
+    }
+
+
+
+/*    @media (max-width: 950px) {
+      h1 {
+        font-size: 44px;
+      }
+    }*/
+
+  </style>
+</head>
+
+<body>
+
+<div class="marquee">
+  <div class="marqueeInner">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+  </div>
+</div>
+
+<section class="hero">
+  <img class="hero-logo" src="TA-logo-b.png">
+</section>
+
+<div class="marquee">
+  <div class="marqueeInnerReverse">
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+    <span class="date">6.22</span>
+  </div>
+</div>
+
+
+</body>
+</html>
