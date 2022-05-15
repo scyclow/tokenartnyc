@@ -37,11 +37,13 @@
       font-family: 'PT Mono', monospace;
     }
     .hero {
-      width: calc(100vw - 3em);
-      max-width: 1170px;
-      margin: auto;
-      margin-bottom: 58px;
-      padding: 0 1.5em;
+      width: calc(100% - 3em);
+      /*max-width: 1170px;*/
+      /*max-width: 50vw;*/
+
+      /*margin: 2em auto;*/
+      /*padding: 0 1.5em;*/
+      padding: 1.5em;
     }
     .hero-logo {
       width: 100%;
@@ -51,15 +53,70 @@
       width: 150px;
     }
 
+
+    .content {
+      margin: 1em;
+    }
+
+
+    .signup {
+      background: #fff;
+      color: #00f;
+      border: 2px solid;
+      padding: 1em;
+      font-size: 25px;
+
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 5em;
+    }
+
+    @media (max-width: 950px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        max-width: none;
+      }
+
+      .signup {
+        font-size: 4vw;
+      }
+    }
+
     @media (max-width: 500px) {
       .marquee-logo {
         width: 100px;
       }
 
-      .hero {
-        margin-bottom: 34px;
+
+      .info {
+        font-size: 12px;
       }
+
+      .signup {
+        font-size: 1.2em;
+      }
+
     }
+
+
+
+
+
+
+
+
+
 
     .marquee {
       overflow: hidden;
@@ -84,8 +141,6 @@
 
     .marqueeInner > * {
       display: inline-block;
-      margin-right: 1em;
-      /*width: 7em;*/
     }
 
     @keyframes marquee {
@@ -108,14 +163,40 @@
       }
     }
 
-    .date {
-      color: #00f;
+    .date, .location {
+      color: #fff;
+      /*color: #00f;*/
       font-weight: 100;
       margin-right: 2em;
       font-size: 20px;
       padding: 0.5em 0;
       /*text-shadow: -16px -12px #00f;*/
     }
+
+    .location {
+      width:  200px;
+    }
+
+
+    nav {
+      position: fixed;
+      top: 0;
+    }
+    .nav-space {
+      height: 47px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: -4px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
 
 
 
@@ -130,92 +211,97 @@
 
 <body>
 
-<div class="marquee" style="border-bottom: 2px solid;">
-  <div class="marqueeInner">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
-    <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+
+<nav>
+  <div class="marquee" style="border-bottom: 2px solid;">
+    <div class="marqueeInnerReverse">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+      <img class="marquee-logo" src="./TA-logo-marquee-b.png">
+    </div>
   </div>
+</nav>
+<div class="nav-space"></div>
+
+<div class="layout">
+  <section class="hero">
+    <img class="hero-logo" src="TA-logo-b.png">
+  </section>
+
+  <section class="content center">
+    <button class="signup">SIGN UP</button>
+  </section>
+
+  <section class="info">
+    <h2>6.22</h2>
+    <h2>10:00 - 17:00</h2>
+  </section>
+
+
+
+
+
 </div>
 
-<section class="hero">
-  <img class="hero-logo" src="TA-logo-b.png">
-</section>
 
-<div class="marquee" style="border-bottom: 2px solid; border-top: 2px solid;">
-  <div class="marqueeInnerReverse">
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
-    <span class="date">6.22</span>
+
+<footer>
+
+  <div class="marquee" style="border-bottom: 2px solid; border-top: 2px solid; background: #000;">
+     <div class="marqueeInner">
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+      <span class="date">6.22</span>
+      <span class="location">Brooklyn > DUMBO</span>
+    </div>
   </div>
-</div>
+</footer>
 
 
 </body>
