@@ -44,6 +44,7 @@
       /*margin: 2em auto;*/
       /*padding: 0 1.5em;*/
       padding: 1.5em;
+      order: 1;
     }
     .hero-logo {
       width: 100%;
@@ -54,29 +55,51 @@
     }
 
 
-    .content {
+    .signup-section {
       margin: 1em;
+      order:  3;
     }
 
 
     .signup {
-      background: #fff;
-      color: #00f;
+      font-size: 45px;
       border: 2px solid;
       padding: 1em;
-      font-size: 25px;
-
+      color: #fff;
+      background: #00f;
     }
 
+/*    .signup:hover {
+    }
+*/
     .layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-content: center;
     }
 
     .info {
+      padding: 3em 5em;
+      max-width: 450px;
+    }
+
+    .schedule {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .description {
+      order: 4;
+    }
+
+
+    .split {
       display: flex;
       justify-content: space-between;
-      padding: 5em;
+
     }
 
     @media (max-width: 950px) {
@@ -90,6 +113,18 @@
 
       .signup {
         font-size: 4vw;
+      }
+      .signup-section {
+        order: 2;
+      }
+
+      .schedule {
+        order: 3;
+      }
+
+      .info {
+        padding: 4em;
+        padding-bottom: 0;
       }
     }
 
@@ -120,7 +155,7 @@
 
     .marquee {
       overflow: hidden;
-      display: inline-block;
+      /*display: inline-block;*/
       width: 100%;
       box-sizing: border-box;
       /*border: 3px solid;*/
@@ -181,6 +216,7 @@
     nav {
       position: fixed;
       top: 0;
+      background: #fff;
     }
     .nav-space {
       height: 47px;
@@ -190,6 +226,13 @@
       position: fixed;
       bottom: -4px;
     }
+
+    p {
+      line-height: 1.2;
+      margin: 0.5em 0;
+
+    }
+
 
     .center {
       display: flex;
@@ -254,13 +297,36 @@
     <img class="hero-logo" src="TA-logo-b.png">
   </section>
 
-  <section class="content center">
-    <button class="signup">SIGN UP</button>
+  <!-- <section class=""> -->
+    <a href="./" class="signup signup-section center">SIGN UP ></a>
+  <!-- </section> -->
+
+  <section class="info schedule">
+    <div>
+      <h2>Unconference*</h2>
+    </div>
+
+    <div class="split">
+      <h2>6.22</h2>
+      <h2>10:00 - 17:00</h2>
+    </div>
+
+
   </section>
 
-  <section class="info">
-    <h2>6.22</h2>
-    <h2>10:00 - 17:00</h2>
+  <section class="info description">
+    <div>
+      *What is an unconference?
+    </div>
+    <div>
+      <p>
+        An unconference is a <em>participant-driven</em> event. All topics are proposed and voted on by the attendees. The space is split into multiple breakout areas to facilitate these discussions.
+      </p>
+
+      <p>
+        As an attendee, you are free to float between discussions based on your interest. You are never in the wrong place. Whichever conversation you are having is the right one.
+      </p>
+    </div>
   </section>
 
 
