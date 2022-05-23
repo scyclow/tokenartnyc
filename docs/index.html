@@ -63,15 +63,19 @@
 
     .signup {
       font-size: 45px;
-      border: 2px solid;
+      border: 2px solid #00f;
       padding: 1em;
       color: #fff;
       background: #00f;
+      transition: 300ms;
     }
 
-/*    .signup:hover {
+
+    .signup:hover {
+      color: #00f;
+      background: #fff;
     }
-*/
+
     .layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -93,6 +97,14 @@
 
     .description {
       order: 4;
+    }
+
+    .social {
+      order: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
 
@@ -226,11 +238,13 @@
       position: fixed;
       bottom: -4px;
     }
+    .footer-space {
+      height: 46px;
+    }
 
     p {
       line-height: 1.2;
       margin: 0.5em 0;
-
     }
 
 
@@ -298,12 +312,13 @@
   </section>
 
   <!-- <section class=""> -->
-    <a href="./" class="signup signup-section center">SIGN UP ></a>
+    <a href="https://www.eventbrite.com/e/token-art-nyc-a-day-of-nft-art-unconferencing-tickets-346285097047" class="signup signup-section center">REGISTER ></a>
+
   <!-- </section> -->
 
   <section class="info schedule">
     <div>
-      <h2>Unconference*</h2>
+      <h2 style="margin-bottom: 0.3em;">Unconference</h2>
     </div>
 
     <div class="split">
@@ -316,9 +331,6 @@
 
   <section class="info description">
     <div>
-      *What is an unconference?
-    </div>
-    <div>
       <p>
         An unconference is a <em>participant-driven</em> event. All topics are proposed and voted on by the attendees. The space is split into multiple breakout areas to facilitate these discussions.
       </p>
@@ -327,16 +339,21 @@
         As an attendee, you are free to float between discussions based on your interest. You are never in the wrong place. Whichever conversation you are having is the right one.
       </p>
     </div>
+
   </section>
 
 
+    <section class="social">
+      <a href="https://discord.gg/QbfgQM5QbS" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em; color: #00f;">Discord ></a>
+      <a href="https://twitter.com/TokenArtNYC" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em; color: #00f;">Twitter ></a>
+    </section>
 
 
 
 </div>
 
 
-
+<div class="footer-space"></div>
 <footer>
 
   <div class="marquee" style="border-bottom: 2px solid; border-top: 2px solid; background: #000;">
