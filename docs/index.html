@@ -58,6 +58,7 @@
     .signup-section {
       margin: 1em;
       order:  3;
+      width: 100%;
     }
 
 
@@ -68,6 +69,12 @@
       color: #fff;
       background: #00f;
       transition: 300ms;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36vw;
+      max-width: 100%;
+      height: 100px;
     }
 
 
@@ -77,10 +84,11 @@
     }
 
     .layout {
+      max-width: 1400px;
+      margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      justify-content: center;
-      align-content: center;
+      justify-items: center;
     }
 
     .info {
@@ -101,9 +109,12 @@
 
     .social {
       order: 5;
+    }
+
+    .social {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      /*justify-content: center;*/
       align-items: center;
     }
 
@@ -114,6 +125,23 @@
 
     }
 
+
+    .sponsors {
+      order: 6;
+      margin-top: 1em;
+      padding: 0.5em 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .sponsors img {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 1em;
+    }
+
     @media (max-width: 950px) {
       .layout {
         grid-template-columns: 1fr;
@@ -121,6 +149,10 @@
 
       .hero {
         max-width: none;
+      }
+
+      .signup {
+        height: 80px;
       }
 
       .signup {
@@ -136,6 +168,7 @@
 
       .info {
         padding: 4em;
+        padding-top: 3em;
         padding-bottom: 0;
       }
     }
@@ -152,6 +185,7 @@
 
       .signup {
         font-size: 1.2em;
+        height: 60px;
       }
 
     }
@@ -239,12 +273,16 @@
       bottom: -4px;
     }
     .footer-space {
-      height: 46px;
+      height: 100px;
     }
 
     p {
       line-height: 1.2;
       margin: 0.5em 0;
+    }
+
+    a, a:hover {
+      color: #00f;
     }
 
 
@@ -311,19 +349,13 @@
     <img class="hero-logo" src="TA-logo-b.png">
   </section>
 
-  <!-- <section class=""> -->
-    <a href="https://www.eventbrite.com/e/token-art-nyc-a-day-of-nft-art-unconferencing-tickets-346285097047" class="signup signup-section center">REGISTER ></a>
-
-  <!-- </section> -->
+  <section class="signup-section center">
+    <a href="https://www.eventbrite.com/e/token-art-nyc-a-day-of-nft-art-unconferencing-tickets-346285097047" class="signup ">REGISTER ></a>
+  </section>
 
   <section class="info schedule">
     <div>
-      <h2 style="margin-bottom: 0.3em;">Unconference</h2>
-    </div>
-
-    <div class="split">
-      <h2>6.22</h2>
-      <h2>10:00 - 17:00</h2>
+      <h2>An <a href="https://en.wikipedia.org/wiki/Unconference" target="_blank">unconference</a> for NFT artists, builders, and thought leaders</h2>
     </div>
 
 
@@ -332,25 +364,43 @@
   <section class="info description">
     <div>
       <p>
-        An unconference is a <em>participant-driven</em> event. All topics are proposed and voted on by the attendees. The space is split into multiple breakout areas to facilitate these discussions.
+        This is a <em>participant-driven</em> event. All discussion topics will proposed and voted on by the attendees. The space will be split into multiple breakout areas to facilitate these discussions.
       </p>
 
       <p>
         As an attendee, you are free to float between discussions based on your interest. You are never in the wrong place. Whichever conversation you are having is the right one.
       </p>
     </div>
-
   </section>
 
 
-    <section class="social">
-      <a href="https://discord.gg/QbfgQM5QbS" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em; color: #00f;">Discord ></a>
-      <a href="https://twitter.com/TokenArtNYC" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em; color: #00f;">Twitter ></a>
-    </section>
+  <section class="social info">
+    <h2><a href="https://discord.gg/QbfgQM5QbS" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Discord ></a></h2>
+    <h2><a href="https://twitter.com/TokenArtNYC" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Twitter ></a></h2>
 
+    <div style="margin-top: 4em; text-align: center;">
+      <h2>Organizers:</h2>
+      <h2><a href="https://https://twitter.com/_GenArtworks_" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Alex Supkay</a></h2>
+      <h2><a href="https://twitter.com/emailyedelman" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Emily Edelman</a></h2>
+      <h2><a href="https://twitter.som/steviepxyz" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Steve Pikelny</a></h2>
+    </div>
+  </section>
 
+  <section class="sponsors info">
+    <h2>Sponsors:</h2>
+    <a href="https://artblocks.io" target="_blank"><img src="./ab-logo.png"></a>
+    <a href="https://plottables.io" target="_blank"><img src="./plottables-logo.svg"></a>
+  </section>
 
 </div>
+<section class="organizers info">
+
+</section>
+
+
+
+
+
 
 
 <div class="footer-space"></div>
