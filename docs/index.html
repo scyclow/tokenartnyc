@@ -111,7 +111,8 @@
       order: 5;
     }
 
-    .social {
+    .social, .organizers {
+      grid-column: span 2;
       display: flex;
       flex-direction: column;
       /*justify-content: center;*/
@@ -133,13 +134,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      grid-column: span 2;
     }
 
+    .organizers {
+      order: 7;
+    }
 
     .sponsors img {
       width: 100%;
       max-width: 500px;
-      margin-top: 1em;
+    }
+
+    .sponsorGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      column-gap: 2em;
+    }
+
+    .jpg {
+      width: 100%;
     }
 
     @media (max-width: 950px) {
@@ -170,6 +186,18 @@
         padding: 4em;
         padding-top: 3em;
         padding-bottom: 0;
+      }
+
+      .social, .sponsors, .sponsorGrid, .organizers {
+        grid-column: span 1;
+      }
+
+      .sponsorGrid {
+        grid-template-columns: 1fr;
+      }
+
+      .jpg {
+        margin-top: 4em;
       }
     }
 
@@ -402,11 +430,22 @@
     </div>
   </section>
 
-
   <section class="social info">
     <h2><a href="https://discord.gg/QbfgQM5QbS" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Discord ></a></h2>
     <h2><a href="https://twitter.com/TokenArtNYC" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Twitter ></a></h2>
+  </section>
 
+  <section class="sponsors" style="max-width: 750px;">
+    <h2>Sponsors:</h2>
+    <div class="sponsorGrid">
+      <a href="https://persona.nyc" target="_blank"><img src="./persona-logo.png"></a>
+      <a href="https://artblocks.io" target="_blank"><img src="./ab-logo.png"></a>
+      <a href="https://plottables.io" target="_blank"><img src="./plottables-logo.svg"></a>
+      <a href="https://jpg.space/" target="_blank" class="jpg"><img src="./jpg-logo.svg"></a>
+    </div>
+  </section>
+
+  <section class="organizers info">
     <div style="margin-top: 4em; text-align: center;">
       <h2>Organizers:</h2>
       <h2><a href="https://twitter.com/_GenArtworks_" target="_blank" rel="nofollow" style="display: block; margin-top: 0.5em;">Alex Supkay</a></h2>
@@ -415,18 +454,8 @@
     </div>
   </section>
 
-  <section class="sponsors info">
-    <h2>Sponsors:</h2>
-    <a href="https://persona.nyc" target="_blank"><img src="./persona-logo.png"></a>
-    <a href="https://artblocks.io" target="_blank"><img src="./ab-logo.png"></a>
-    <a href="https://plottables.io" target="_blank"><img src="./plottables-logo.svg"></a>
-  </section>
 
 </div>
-<section class="organizers info">
-
-</section>
-
 
 
 
